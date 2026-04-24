@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humidex | Contact</title>
+
+<meta name="description" content="Humidex — системы форсуночного увлажнения воздуха">
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
+  background: radial-gradient(circle at top, #111 0%, #000 70%);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* фон */
+.bg {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
+  filter: blur(60px);
+}
+
+/* карточка */
+.card {
+  width: 340px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+/* мягкий glow */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -120px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
+  filter: blur(40px);
+  opacity: 0.6;
+}
+
+/* фото */
+.avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* текст */
+h1 {
+  font-size: 19px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 6px;
+}
+
+.description {
+  font-size: 13px;
+  margin-top: 12px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.4;
+}
+
+/* линия */
+.line {
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 16px 0;
+}
+
+/* кнопки */
+a {
+  display: block;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.25s ease;
+}
+
+a:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+}
+
+a:active {
+  transform: scale(0.97);
+}
+
+/* статус */
+.status {
+  margin-top: 10px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="card">
+
+  <img class="avatar" src="https://files.catbox.moe/27ah9t.png" alt="Humidex">
+
+  <h1>Богомолов Дмитрий Александрович</h1>
+  <div class="subtitle">Humidex Systems</div>
+
+  <div class="description">
+    Системы форсуночного увлажнения воздуха для премиальных объектов: квартиры, офисы, рестораны и частные дома.
+  </div>
+
+  <div class="line"></div>
+
+  <a href="tel:+79852221886">📞 Позвонить</a>
+  <a href="mailto:bogomolov@humidex.ru">✉️ Email</a>
+  <a href="https://t.me/humidex_system" target="_blank" rel="noopener noreferrer">📢 Telegram канал</a>
+  <a href="https://t.me/Humidex_Msk" target="_blank" rel="noopener noreferrer">@Humidex_Msk</a>
+
+  <!-- 📇 VCF -->
+  <a href="contact.vcf">📇 Добавить в контакты</a>
+
+  <a href="https://maps.google.com/?q=Ленинский проспект 42 Москва" target="_blank">📍 Адрес</a>
+
+  <div class="status">
+    Humidex • Premium Humidification Systems
+  </div>
+
+</div>
+
+</body>
+</html>
